@@ -1,1 +1,6 @@
-compatibility_flags = [ "nodejs_compat" ]
+#:schema node_modules/wrangler/config-schema.json
+name = "portfolio-anndeviant"
+pages_build_output_dir = ".vercel/output/static"
+
+[compatibility_flags]
+nodejs_compat = true
