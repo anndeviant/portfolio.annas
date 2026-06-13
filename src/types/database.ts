@@ -26,7 +26,7 @@ export interface ProfileRow {
   avatar_url: string | null;
   contact: Json | null;
   skills: string | null;
-}
+} 
 
 export interface ProjectRow {
   id: number;
