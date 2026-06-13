@@ -5,14 +5,10 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
 import {
-  extractJsonLinks,
-  isRecord,
-  jsonString,
-  normalizeHref,
   splitList,
   splitParagraphs,
-  type TextLink,
 } from "../../lib/data-utils";
+import { getProfileContactLinks } from "../../lib/profile-contact";
 import type { ProfileRow } from "../../types/database";
 
 type HeroProps = {
@@ -29,7 +25,7 @@ export default function Hero({ profile }: HeroProps) {
     () => splitParagraphs(profile.summary),
     [profile.summary],
   );
-  const contactLinks = useMemo(() => getContactLinks(profile), [profile]);
+  const contactLinks = useMemo(() => getProfileContactLinks(profile), [profile]);
 
   useEffect(() => {
     if (titles.length < 2) {
@@ -60,7 +56,7 @@ export default function Hero({ profile }: HeroProps) {
           </p>
 
           <h1 className="max-w-5xl text-balance text-5xl font-black leading-[0.95] text-white md:text-7xl lg:text-8xl xl:text-9xl">
-            I'm {profile.name ?? "Annas"}
+            I&apos;m {profile.name ?? "Annas"}
           </h1>
 
           <div className="mt-4 min-h-9 overflow-hidden md:mt-6 md:min-h-12">
@@ -150,48 +146,4 @@ export default function Hero({ profile }: HeroProps) {
 function parseTitles(value: string | null): string[] {
   const titles = splitList(value);
   return titles.length > 0 ? titles : ["Software Engineer and AI Builder"];
-}
-
-function getContactLinks(profile: ProfileRow): TextLink[] {
-  const links: TextLink[] = [];
-
-  const contact = profile.contact;
-
-  if (!isRecord(contact)) {
-    return links;
-  }
-
-  const email = jsonString(contact.email);
-  if (email) {
-    links.push({ label: "Email", url: `mailto:${email}` });
-  }
-
-  if (isRecord(contact.social)) {
-    links.push(...extractJsonLinks(contact.social));
-  }
-
-  return links
-    .map((link) => ({ ...link, url: normalizeHref(link.url) ?? "" }))
-    .filter((link) => link.url.length > 0)
-    .sort(
-      (left, right) =>
-        getContactLinkOrder(left.label) - getContactLinkOrder(right.label),
-    );
-}
-
-function getContactLinkOrder(label: string): number {
-  const normalized = label.trim().toLowerCase();
-
-  switch (normalized) {
-    case "linkedin":
-      return 0;
-    case "email":
-      return 1;
-    case "github":
-      return 2;
-    case "x":
-      return 3;
-    default:
-      return 4;
-  }
 }

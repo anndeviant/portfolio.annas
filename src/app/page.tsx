@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Events from "../components/sections/Events";
+import Footer from "../components/sections/Footer";
 import Hero from "../components/sections/Hero";
 import Projects from "../components/sections/Projects";
 import Resume from "../components/sections/Resume";
@@ -37,12 +38,7 @@ export default async function Home() {
       <TechStack />
       <Projects projects={data.projects} />
       <Events events={data.events} />
-      <footer className="px-5 pb-12 pt-10 md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-5 border-t border-white/10 pt-8 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <p>{data.profile.name ?? "Annas"} Sovianto</p>
-          <p>Built with Next.js, Supabase, Lenis, and Framer Motion.</p>
-        </div>
-      </footer>
+      <Footer profile={data.profile} />
     </main>
   );
 }
