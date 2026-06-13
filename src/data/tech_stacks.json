@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Data/AI",
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "https://skillicons.dev/icons?i=python"
+      },
+      {
+        "name": "NumPy",
+        "icon": "https://api.iconify.design/logos:numpy.svg"
+      },
+      {
+        "name": "Pandas",
+        "icon": "https://api.iconify.design/logos:pandas-icon.svg"
+      },
+      {
+        "name": "scikit-learn",
+        "icon": "https://skillicons.dev/icons?i=sklearn"
+      },
+      {
+        "name": "PyTorch",
+        "icon": "https://skillicons.dev/icons?i=pytorch"
+      },
+      {
+        "name": "TensorFlow",
+        "icon": "https://skillicons.dev/icons?i=tensorflow"
+      },
+      {
+        "name": "FastAPI",
+        "icon": "https://skillicons.dev/icons?i=fastapi"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "https://skillicons.dev/icons?i=postgres"
+      },
+      {
+        "name": "Excel",
+        "icon": "https://api.iconify.design/vscode-icons:file-type-excel.svg"
+      },
+      {
+        "name": "Tableau",
+        "icon": "https://api.iconify.design/logos:tableau-icon.svg"
+      },
+      {
+        "name": "R",
+        "icon": "https://api.iconify.design/logos:r-lang.svg"
+      },
+      {
+        "name": "RStudio",
+        "icon": "https://api.iconify.design/devicon:rstudio.svg"
+      }
+    ]
+  },
+  {
+    "title": "Fullstack",
+    "stack": [
+      {
+        "name": "TypeScript",
+        "icon": "https://skillicons.dev/icons?i=typescript"
+      },
+      {
+        "name": "HTML",
+        "icon": "https://skillicons.dev/icons?i=html"
+      },
+      {
+        "name": "CSS",
+        "icon": "https://skillicons.dev/icons?i=css"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "https://skillicons.dev/icons?i=javascript"
+      },
+      {
+        "name": "React",
+        "icon": "https://skillicons.dev/icons?i=react"
+      },
+      {
+        "name": "Angular",
+        "icon": "https://skillicons.dev/icons?i=angular"
+      },
+      {
+        "name": "Next.js",
+        "icon": "https://skillicons.dev/icons?i=nextjs"
+      },
+      {
+        "name": "Node.js",
+        "icon": "https://skillicons.dev/icons?i=nodejs"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "https://skillicons.dev/icons?i=spring"
+      },
+      {
+        "name": ".NET",
+        "icon": "https://skillicons.dev/icons?i=dotnet"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "https://skillicons.dev/icons?i=mongodb"
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "stack": [
+      {
+        "name": "VS Code",
+        "icon": "https://skillicons.dev/icons?i=vscode"
+      },
+      {
+        "name": "Jupyter",
+        "icon": "https://api.iconify.design/logos:jupyter.svg"
+      },
+      {
+        "name": "Git",
+        "icon": "https://skillicons.dev/icons?i=git"
+      },
+      {
+        "name": "GitHub",
+        "icon": "https://skillicons.dev/icons?i=github"
+      },
+      {
+        "name": "Docker",
+        "icon": "https://skillicons.dev/icons?i=docker"
+      },
+      {
+        "name": "Postman",
+        "icon": "https://skillicons.dev/icons?i=postman"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://skillicons.dev/icons?i=vercel"
+      },
+      {
+        "name": "Notion",
+        "icon": "https://skillicons.dev/icons?i=notion"
+      },
+      {
+        "name": "Excel",
+        "icon": "https://api.iconify.design/vscode-icons:file-type-excel.svg"
+      },
+      {
+        "name": "PowerPoint",
+        "icon": "https://api.iconify.design/vscode-icons:file-type-powerpoint.svg"
+      },
+      {
+        "name": "Google Workspace",
+        "icon": "https://api.iconify.design/logos:google-icon.svg"
+      },
+      {
+        "name": "Microsoft Teams",
+        "icon": "https://api.iconify.design/logos:microsoft-teams.svg"
+      },
+      {
+        "name": "Canva",
+        "icon": "https://api.iconify.design/simple-icons:canva.svg?color=%2300C4CC"
+      },
+      {
+        "name": "Figma",
+        "icon": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "title": "GenAI",
+    "stack": [
+      {
+        "name": "Gemini",
+        "icon": "https://api.iconify.design/logos:google-gemini.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "https://api.iconify.design/simple-icons:claude.svg?color=%23D97757"
+      },
+      {
+        "name": "NotebookLM",
+        "icon": "https://api.iconify.design/simple-icons:notebooklm.svg?color=%234285F4"
+      },
+      {
+        "name": "Perplexity",
+        "icon": "https://api.iconify.design/simple-icons:perplexity.svg?color=%2320B8CD"
+      },
+      {
+        "name": "Codex",
+        "icon": "https://api.iconify.design/simple-icons:openai.svg?color=%23412991"
+      }
+    ]
+  }
+]
